@@ -21,7 +21,7 @@ def authenticate(username, password, pwdb):
 
 def write_pwdb(pwdb):
     with open('pwdb.json', 'wt') as pwdb_file:  
-        jsonson.dump(pwdb, pwdb_file)
+        json.dump(pwdb, pwdb_file)
     print('pwdb written!')
    
 def read_pwdb():
